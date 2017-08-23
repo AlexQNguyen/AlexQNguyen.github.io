@@ -1,0 +1,129 @@
+body{
+color: #8A8E8F;
+font-family: 'Catamaran', sans-serif;
+font-weight: 400;
+font-size: 2.5em;
+padding-bottom: 50px;
+}
+
+nav{
+  background-color: #4D4646;
+}
+
+
+.container{
+  background: linear-gradient(#6B6565, #181515, #4D4646);
+  width:100%;
+  display: inline-block;
+  margin-bottom: -10px;
+  position: relative;
+  padding-right: 50px;
+}
+
+h2{
+  margin-bottom: 2px;
+}
+p{
+  margin-right: 20px;
+}
+
+
+.header{
+    position:relative;
+    display: inline-block;
+    background-image: url(./img/portfolioBack.png);
+    background-size: cover;
+    background-position: center;
+    background-color: fade(50%);
+    width: 100%;
+    height: 700px;
+
+}
+
+.header-content{
+  margin: auto;
+  color: white;
+  display: block;
+  position: relative;;
+  height: 300px;
+  width: 600px;
+
+  margin-top: 320px;
+  text-align: center;
+}
+
+ #selfie{
+  width: 150px;
+  height: 175px;
+  margin: auto;
+}
+
+.thumbnail{
+  display: inline;
+  width: 30%;
+}
+.row{
+  display: inline;
+}
+
+#project-img{
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+#about{
+  margin-top: 50px;
+}
+.about_me{
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 2px 0px 50px 0px;
+  background-color: #161616;
+  color: white;
+  font-size: .75em;
+
+}
+.project{
+  margin-top: 40px;
+}
+#tech_skill{
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(#6B6565, #181515, #4D4646)
+}
+
+#tech_skill h2{
+  margin-bottom: 10px;
+}
+.skills{
+  vertical-align: top;
+  display: inline-block;
+  width: 20%;
+}
+
+.skills h3{
+  text-decoration: underline;
+}
+ul{
+
+  list-style-type: none;
+}
+#contact{
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.contact_img{
+  width: 45px;
+  height: 45px;
+}
+
+.contact_img2{
+  width: 75px;
+  height: 65px;
+}
