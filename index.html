@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,15 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script type="text/javascript">
-          $(document).on('click', 'a', function(event){
-          event.preventDefault();
 
-          $('html, body').animate({
-              scrollTop: $( $.attr(this, 'href') ).offset().top
-          }, 1000);
-      });
-    </script>
     <title>Alex Q. Nguyen</title>
   </head>
 <body>
@@ -45,10 +38,11 @@
       Hello, I am a developer who....
     </h1>
     <ul>
-      <li>Cooks like it's a chemistry experiment...</li>
-      <li>Loves dounuts...</li>
-      <li>Always wants to learn...</li>
-      <li>Is always a student, never a master...</li>
+      <li><div id='alex'></div></li>
+      <!-- <li>Cooks like it's a chemistry experiment...</li> -->
+      <!-- <li>Loves dounuts...</li> -->
+      <!-- <li>Always wants to learn...</li> -->
+      <!-- <li>Is always a student, never a master...</li> -->
     </ul>
   </div>
   <div id="projects" class="project" >
@@ -139,6 +133,39 @@
     <a href="https://www.linkedin.com/in/alexander-nguyen-a1016963/" class="navbar-link" style="color: white;"><img class="contact_img" src="https://media.glassdoor.com/sqll/34865/linkedin-squarelogo-1462308283451.png" alt="LinkedIn"></a>
     <a href="https://github.com/anguye1987" class="navbar-link" style="color: white;"><img class="contact_img2" src="https://s-media-cache-ak0.pinimg.com/736x/df/e0/d3/dfe0d33ab09a4858ca210dcf3f7c57fb.jpg" alt="github"></a>
   </div>
+
+  <script type="text/javascript">
+        $(document).on('click', 'a', function(event){
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 1000);
+    });
+    var words = ["Cooks like it's a chemistry experiment . . .", "Loves dounuts . . .", "Always wants to learn . . .", "Is always a student, never a master....."]
+			el = document.getElementById('alex'),
+			word_counter = 0,
+			character_counter = 0;
+    function updateText()
+		{
+			var character = words[word_counter][character_counter++];
+			if(character === " "){
+				character = "&nbsp";
+			}
+			el.innerHTML = el.innerHTML+ character ;
+			if(character_counter == words[word_counter].length + 1)
+			{
+				word_counter++; 	//choose a different word
+				character_counter = 0;	//start over with the first character of the word
+				el.innerHTML = '';  //set the html to be blank
+				//if we're displaying the last word, go back to the first word
+				if(word_counter == words.length)
+					word_counter = 0;
+			}
+		}
+		setInterval(updateText,150);
+
+  </script>
 </body>
 
 
