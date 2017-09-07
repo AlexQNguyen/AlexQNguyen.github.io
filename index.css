@@ -10,7 +10,9 @@ nav{
   background-color: #4D4646;
 }
 
-
+#navbar-link{
+  font-size: .75em;
+}
 .container{
   background: linear-gradient(#6B6565, #181515, #4D4646);
   width:100%;
