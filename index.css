@@ -128,7 +128,8 @@ ul{
   position: relative;
 }
 .contact_img{
-  display: inline;
+  text-align: center;
+  display: block;
   padding: 0px;
   width: 45px;
   height: 45px;
