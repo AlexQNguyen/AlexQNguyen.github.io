@@ -92,11 +92,7 @@ p{
   margin-top: 40px;
 }
 
-.link a{
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-}
+
 
 #tech_skill{
   padding: 10px 10px 20px 10px;
@@ -128,7 +124,7 @@ ul{
   position: relative;
 }
 .contact_img{
-  display: block;
+
   padding: 0px;
   width: 45px;
   height: 45px;
@@ -137,4 +133,12 @@ ul{
 .contact_img2{
   width: 75px;
   height: 65px;
+}
+
+#links{
+  width: 100%;
+padding: 50px;
+text-align: center;
+background-color: lightblue;
+margin-top:20px;
 }

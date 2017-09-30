@@ -52,14 +52,11 @@
         <div class="thumbnail">
           <img src="https://buidln.clipdealer.com/001/655/775//previews/1--1655775-Questions%20Speech%20Bubble.jpg" alt="...">
           <div class="caption">
-          <a href="52.42.29.65"><h3>Questions, Answers, and Deep Thoughts</h3></a>
-            <h6>(Front-end coming soon)</h6>
+            <h3>Questions, Answers, and Deep Thoughts</h3>
           </div>
-          <div>
-            <a class="contact_img" href="https://www.github.com/AlexQNguyen/QAD" style="cursor: pointer;">
-              <img src="./img/github.svg" alt="github" style="margin-left: 150px;">
-            </a>
-          </div>
+          <a href="https://github.com/AlexQNguyen/QAD" >
+            <img class="contact_img" src="./img/github.svg" alt="github" >
+          </a>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
@@ -68,8 +65,8 @@
           <div class="caption">
             <h3 style=" text-align:center">InstaFood</h3>
           </div>
-          <a href="https://www.github.com/AlexQNguyen/foodgram">
-            <img class="contact_img" src="./img/github.svg" alt="github">
+          <a href="https://github.com/AlexQNguyen/inklink">
+            <img  class="contact_img" src="./img/github.svg" alt="github">
           </a>
         </div>
       </div>
@@ -140,9 +137,16 @@
     <h6>Alexander Nguyen</h6>
     <h6>(408)595-6759</h6>
     <h6><a href="">AlexQNguyen4@gmail.com</a></h6>
-    <!-- <a href="https://www.linkedin.com/in/alexander-nguyen-a1016963/" class="navbar-link" style="color: white; text-align:center;"><img class="contact_img" src="./img/linkedin.png" alt="LinkedIn"></a> -->
+    <a href="https://www.linkedin.com/in/alexander-nguyen-a1016963/" class="navbar-link" style="color: white;"><img class="contact_img2" src="./img/linkedin.png" alt="LinkedIn"></a>
     <a href="https://github.com/Alexqnguyen" class="navbar-link" style="color: white;"><img class="contact_img2" src="./img/github.svg" alt="github"></a>
   </div>
+    <!-- <img  onclick="myFunction()" class="contact_img" src="./img/github.svg" alt="github" style="display: block; color: blue;">
+    <div id="links">
+      <a id="links" href="http://www.github.com/AlexQNguyen/QAD">
+        Go to GitHub
+      </a> -->
+    </div>
+
 
   <script type="text/javascript">
         $(document).on('click', 'a', function(event){
@@ -174,6 +178,20 @@
 			}
 		}
 		setInterval(updateText,150);
+
+    $("#links").hide();
+
+    function myFunction(e) {
+    var x = document.getElementById('links');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+
 
   </script>
 </body>
