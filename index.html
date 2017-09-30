@@ -152,10 +152,14 @@
         $(document).on('click', 'a', function(event){
         event.preventDefault();
 
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 1000);
-    });
+        $(".navbar-link").click(function(){
+          var section = "#" + this.href;
+          $(section).slideDown();
+        });
+    //     $('html, body').animate({
+    //         scrollTop: $( $.attr(this, 'href') ).offset().top
+    //     }, 1000);
+    // });
     var words = ["Cooks like it's a chemistry experiment . . .", "Loves dounuts . . .", "Always wants to learn . . .", "Is always a student, never a master....."]
 			el = document.getElementById('alex'),
 			word_counter = 0,
